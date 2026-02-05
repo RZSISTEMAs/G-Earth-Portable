@@ -1,6 +1,6 @@
 # G-Earth - Portable Distribution (Unofficial)
 
-[![Original Repository](https://img.shields.io/badge/Original_Repo-sirjonasxx%2FG--Earth-blue)](https://github.com/sirjonasxx/G-Earth)
+[![Original Repository](https://img.shields.io/badge/Original_Repo-G--Realm%2FG--Earth-blue)](https://github.com/G-Realm/G-Earth)
 [![Java Version](<https://img.shields.io/badge/Java-8_Full_(BellSoft)-red>)](https://bell-sw.com/)
 
 [🇧🇷 Português](#-versão-em-português) | [🇺🇸 English](#-english-version)
@@ -11,7 +11,7 @@
 
 Esta é uma distribuição customizada e "Portable" (Portátil) do **G-Earth 1.5.3**, criada para facilitar a execução em computadores modernos que não possuem o Java configurado ou que enfrentam problemas com o JavaFX.
 
-Este projeto baseia-se inteiramente no incrível trabalho de [sirjonasxx](https://github.com/sirjonasxx). O objetivo deste repositório não é alterar o código-fonte do G-Earth, mas sim fornecer um ambiente de execução (Runtime) que garanta seu funcionamento.
+Este projeto baseia-se inteiramente no incrível trabalho de [G-Realm](https://github.com/G-Realm/G-Earth). O objetivo deste repositório não é alterar o código-fonte do G-Earth, mas sim fornecer um ambiente de execução (Runtime) que garanta seu funcionamento.
 
 ### 📌 O Problema
 
@@ -44,7 +44,7 @@ Para corrigir isso sem obrigar o usuário a desinstalar ou modificar seu Java at
 
 This is a custom "Portable" distribution of **G-Earth 1.5.3**, designed to facilitate execution on modern computers that lack a compatible Java configuration or face issues with JavaFX.
 
-This project is entirely based on the amazing work by [sirjonasxx](https://github.com/sirjonasxx). The goal of this repository is not to modify G-Earth's source code, but to provide a cohesive Runtime Environment ensuring it works out-of-the-box.
+This project is entirely based on the amazing work by [G-Realm](https://github.com/G-Realm/G-Earth). The goal of this repository is not to modify G-Earth's source code, but to provide a cohesive Runtime Environment ensuring it works out-of-the-box.
 
 ### 📌 The Problem
 
@@ -73,5 +73,5 @@ To fix this without forcing the user to uninstall or modify their system-wide Ja
 
 ---
 
-**All credits for the G-Earth software go to [sirjonasxx](https://github.com/sirjonasxx).**
+**All credits for the G-Earth software go to [G-Realm](https://github.com/G-Realm/G-Earth).**
 **This repository maintains the "Portable Setup" wrapper.**
