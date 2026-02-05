@@ -1,53 +1,75 @@
-# G-Earth - Portable Setup (Legacy Java Fix)
+# G-Earth - Portable Distribution (Unofficial)
 
-Este repositório contém uma distribuição "Portable" otimizada do **G-Earth 1.5.3**, configurada especificamente para contornar problemas de compatibilidade com ambientes modernos que não possuem bibliotecas legadas do JavaFX.
+[![Original Repository](https://img.shields.io/badge/Original_Repo-sirjonasxx%2FG--Earth-blue)](https://github.com/sirjonasxx/G-Earth)
+[![Java Version](<https://img.shields.io/badge/Java-8_Full_(BellSoft)-red>)](https://bell-sw.com/)
 
-## 📋 Visão Geral Técnica
-
-O software original (G-Earth) depende do JavaFX, que foi desacoplado do JDK padrão nas versões mais recentes (Java 11+ e algumas builds do 8). Isso resulta no erro `ClassNotFoundException: gearth.GEarth` ou falhas silenciosas ao tentar iniciar o executável padrão em máquinas não preparadas.
-
-Esta distribuição resolve o problema via **Vendor-Locking** da JRE (Java Runtime Environment), garantindo que o software execute em um ambiente isolado e controlado, independente das variáveis de ambiente do sistema operacional do usuário.
-
-## 🛠 Alterações Realizadas
-
-1.  **Inclusão de Runtime Dedicado (JRE)**:
-    - Foi integrado o **BellSoft Liberica JDK 8 Full Edition**.
-    - Esta versão específica inclui o JavaFX (`jfxrt.jar`), que é pré-requisito mandatório para a interface gráfica do G-Earth.
-    - _Nota_: A JRE está localizada em `./jre` e é totalmente independente da instalação do sistema.
-
-2.  **Script de Inicialização Personalizado (`Iniciar G-Earth.bat`)**:
-    - Substituição da chamada de sistema padrão.
-    - O script força o uso do binário local `./jre/bin/java.exe`.
-    - Argumentos de classpath definidos explicitamente para garantir o carregamento das dependências.
-
-## 🚀 Como Executar
-
-Não é necessário instalar Java no computador.
-
-1.  Clone este repositório ou baixe o ZIP.
-2.  Execute o arquivo:
-    ```bash
-    Iniciar G-Earth.bat
-    ```
-
-## 📁 Estrutura do Projeto
-
-```text
-.
-├── Dependencies/       # Bibliotecas de terceiros requeridas pelo G-Earth
-├── Extensions/         # Diretório reservado para Extensões do usuário
-├── jre/                # Java Runtime Environment (Portable Full JDK 8)
-├── G-Earth.jar         # Core Application Assembly
-├── G-Earth.exe         # Wrapper legado (não recomendado usar este)
-└── Iniciar G-Earth.bat # Script de execução corrigido (EntryPoint Recomendado)
-```
-
-## ⚠️ Notas de Desenvolvimento
-
-- **Versão do G-Earth**: 1.5.3 (Stable)
-- **Versão do Java Embutida**: 1.8.0_282 (Liberica Full)
-- **Arquitetura**: Windows x64
+[🇧🇷 Português](#-versão-em-português) | [🇺🇸 English](#-english-version)
 
 ---
 
-_Este setup foi criado para garantir estabilidade e facilidade de uso em ambientes de desenvolvimento Windows._
+## 🇧🇷 Versão em Português
+
+Esta é uma distribuição customizada e "Portable" (Portátil) do **G-Earth 1.5.3**, criada para facilitar a execução em computadores modernos que não possuem o Java configurado ou que enfrentam problemas com o JavaFX.
+
+Este projeto baseia-se inteiramente no incrível trabalho de [sirjonasxx](https://github.com/sirjonasxx). O objetivo deste repositório não é alterar o código-fonte do G-Earth, mas sim fornecer um ambiente de execução (Runtime) que garanta seu funcionamento.
+
+### 📌 O Problema
+
+O G-Earth depende de uma biblioteca gráfica chamada **JavaFX**. Nas versões modernas do Java (e em muitas instalações padrão do Windows), essa biblioteca foi removida, fazendo com que o G-Earth não abra ou apresente erros como `ClassNotFoundException`.
+
+### 🛠 A Solução Técnica
+
+Para corrigir isso sem obrigar o usuário a desinstalar ou modificar seu Java atual, esta distribuição inclui:
+
+1.  **Java Embutido (BellSoft Liberica JDK 8 Full)**: Uma versão completa do Java que fica dentro da pasta `jre`. Ela já contém o JavaFX nativamente.
+2.  **Isolamento**: O sistema não usa o Java instalado no seu Windows. Ele usa apenas a versão que está dentro da pasta, garantindo que "funcione em qualquer lugar".
+3.  **Bootstrapper (`Iniciar G-Earth.bat`)**: Um script especial que forçam o G-Earth a usar o nosso Java embutido.
+
+### 🚀 Como Usar
+
+1.  Baixe este repositório.
+2.  Execute o arquivo **`Iniciar G-Earth.bat`**.
+    - _Nota: Não use o `G-Earth.exe` original, pois ele tentará usar o Java do seu sistema, que provavelmente não funcionará._
+
+### 📂 Estrutura de Arquivos
+
+- `Iniciar G-Earth.bat`: **Use este arquivo para abrir.**
+- `jre/`: Pasta contendo o Java Portátil (não apague).
+- `Extensions/`: Pasta onde você pode colocar suas extensões do G-Earth.
+
+---
+
+## 🇺🇸 English Version
+
+This is a custom "Portable" distribution of **G-Earth 1.5.3**, designed to facilitate execution on modern computers that lack a compatible Java configuration or face issues with JavaFX.
+
+This project is entirely based on the amazing work by [sirjonasxx](https://github.com/sirjonasxx). The goal of this repository is not to modify G-Earth's source code, but to provide a cohesive Runtime Environment ensuring it works out-of-the-box.
+
+### 📌 The Problem
+
+G-Earth relies on the **JavaFX** graphics library. In modern Java versions (and many standard Windows installations), this library has been decoupled, causing G-Earth to fail at startup with errors like `ClassNotFoundException`.
+
+### 🛠 The Technical Solution
+
+To fix this without forcing the user to uninstall or modify their system-wide Java, this distribution includes:
+
+1.  **Embedded Java (BellSoft Liberica JDK 8 Full)**: A complete Java Runtime located in the `jre` folder. It natively includes the required JavaFX binaries.
+2.  **Isolation**: This system does not use the Java installed on your Windows OS. It exclusively uses the enclosed version, ensuring a "Write Once, Run Anywhere" experience.
+3.  **Bootstrapper (`Iniciar G-Earth.bat`)**: A specialized batch script that forces G-Earth to launch using our embedded Java runtime.
+
+### 🚀 How to Use
+
+1.  Download this repository.
+2.  Run the **`Iniciar G-Earth.bat`** file.
+    - _Note: Do not use the original `G-Earth.exe`, as it will attempt to use your system's Java, which likely won't work._
+
+### 📂 File Structure
+
+- `Iniciar G-Earth.bat`: **Run this file to start the application.**
+- `jre/`: Folder containing the Portable Java Runtime (do not delete).
+- `Extensions/`: Folder where you can drop your G-Earth extensions.
+
+---
+
+**All credits for the G-Earth software go to [sirjonasxx](https://github.com/sirjonasxx).**
+**This repository maintains the "Portable Setup" wrapper.**
