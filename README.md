@@ -28,7 +28,8 @@ Para corrigir isso sem obrigar o usuário a desinstalar ou modificar seu Java at
 ### 🚀 Como Usar
 
 1.  Baixe este repositório.
-2.  Execute o arquivo **`Iniciar G-Earth.bat`**.
+2.  Clique com o botão direito em **`Iniciar G-Earth.bat`** e selecione **"Executar como administrador"**.
+    - _Nota: Executar como administrador é obrigatório para que o G-Earth consiga interceptar e manipular a conexão._
     - _Nota: Não use o `G-Earth.exe` original, pois ele tentará usar o Java do seu sistema, que provavelmente não funcionará._
 
 ### 📂 Estrutura de Arquivos
