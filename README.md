@@ -61,7 +61,8 @@ To fix this without forcing the user to uninstall or modify their system-wide Ja
 ### 🚀 How to Use
 
 1.  Download this repository.
-2.  Run the **`Iniciar G-Earth.bat`** file.
+2.  Right-click on **`Iniciar G-Earth.bat`** and select **"Run as administrator"**.
+    - _Note: Running as administrator is mandatory for G-Earth to intercept and manipulate the connection._
     - _Note: Do not use the original `G-Earth.exe`, as it will attempt to use your system's Java, which likely won't work._
 
 ### 📂 File Structure
