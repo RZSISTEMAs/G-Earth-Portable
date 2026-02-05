@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Implementation-Title: G-Earth
+Implementation-Version: 1.5.3
+Specification-Title: G-Earth
+Class-Path: Dependencies/json-20190722.jar Dependencies/richtextfx-0.1
+ 0.5.jar Dependencies/reactfx-2.0-M5.jar Dependencies/undofx-2.1.0.jar
+  Dependencies/flowless-0.6.1.jar Dependencies/wellbehavedfx-0.3.3.jar
+  Dependencies/jsoup-1.15.3.jar Dependencies/jkeymaster-1.3.jar Depend
+ encies/jna-5.4.0.jar Dependencies/jna-platform-5.4.0.jar Dependencies
+ /maven-artifact-3.6.3.jar Dependencies/plexus-utils-3.2.1.jar Depende
+ ncies/commons-lang3-3.8.1.jar Dependencies/javax.websocket-api-1.1.ja
+ r Dependencies/jetty-server-9.4.48.v20220622.jar Dependencies/javax.s
+ ervlet-api-3.1.0.jar Dependencies/jetty-io-9.4.48.v20220622.jar Depen
+ dencies/javax-websocket-server-impl-9.4.48.v20220622.jar Dependencies
+ /jetty-annotations-9.4.48.v20220622.jar Dependencies/jetty-plus-9.4.4
+ 8.v20220622.jar Dependencies/jetty-jndi-9.4.48.v20220622.jar Dependen
+ cies/jetty-webapp-9.4.48.v20220622.jar Dependencies/jetty-xml-9.4.48.
+ v20220622.jar Dependencies/javax.annotation-api-1.3.2.jar Dependencie
+ s/asm-9.3.jar Dependencies/asm-commons-9.3.jar Dependencies/asm-tree-
+ 9.3.jar Dependencies/asm-analysis-9.3.jar Dependencies/javax-websocke
+ t-client-impl-9.4.48.v20220622.jar Dependencies/websocket-client-9.4.
+ 48.v20220622.jar Dependencies/jetty-client-9.4.48.v20220622.jar Depen
+ dencies/javax.websocket-client-api-1.0.jar Dependencies/websocket-ser
+ ver-9.4.48.v20220622.jar Dependencies/websocket-common-9.4.48.v202206
+ 22.jar Dependencies/websocket-api-9.4.48.v20220622.jar Dependencies/w
+ ebsocket-servlet-9.4.48.v20220622.jar Dependencies/jetty-servlet-9.4.
+ 48.v20220622.jar Dependencies/jetty-security-9.4.48.v20220622.jar Dep
+ endencies/jetty-util-ajax-9.4.48.v20220622.jar Dependencies/jetty-htt
+ p-9.4.48.v20220622.jar Dependencies/jetty-util-9.4.48.v20220622.jar D
+ ependencies/commons-io-2.10.0.jar Dependencies/bytes-1.5.0.jar Depend
+ encies/littleproxy-mitm-1.1.0.jar Dependencies/bcprov-jdk15on-1.51.ja
+ r Dependencies/bcpkix-jdk15on-1.51.jar Dependencies/littleproxy-1.1.0
+ .jar Dependencies/guava-18.0.jar Dependencies/commons-cli-1.3.1.jar D
+ ependencies/commons-codec-1.10.jar Dependencies/netty-all-4.0.36.Fina
+ l.jar Dependencies/barchart-udt-bundle-2.3.0.jar Dependencies/G-Wasm-
+ Minimal-1.0.3.jar Dependencies/logback-core-1.3.5.jar Dependencies/lo
+ gback-classic-1.3.5.jar Dependencies/slf4j-api-2.0.4.jar
+Build-Jdk-Spec: 1.8
+Created-By: Maven JAR Plugin 3.2.2
+Specification-Version: 1.5
+Main-Class: gearth.GEarth
+
